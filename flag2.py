@@ -1,0 +1,43 @@
+#main
+import turtle
+import tkinter.messagebox
+square = turtle.Turtle()
+square.speed(1.5)
+square.penup()
+square.goto(-400, 250)
+square.pendown()
+#orange
+square.color("orange")
+square.begin_fill()
+square.forward(800)
+square.right(90)
+square.forward(167)
+square.right(90)
+square.forward(800)
+square.end_fill()
+square.left(90)
+square.forward(167)
+#green
+square.color("green")
+square.begin_fill()
+square.forward(167)
+square.left(90)
+square.forward(800)
+square.left(90)
+square.forward(167)
+square.end_fill()
+#circle&other
+square.penup()
+square.goto(70, 0)
+square.pendown()
+square.color("navy")
+square.circle(70)
+square.penup()
+square.goto(0, 0)
+square.pendown()
+square.pensize(2)
+for i in range(24):
+	square.forward(60)
+	square.backward(60)
+	square.left(15)
+turtle.done()
